@@ -1,4 +1,4 @@
-# go-llm 
+# girlfriends-llm 
 
 ## API Examples
 
