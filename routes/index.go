@@ -75,7 +75,8 @@ func GetVacationRouter(router *gin.Engine) *gin.Engine {
 				"message": "Bad Request",
 			})
 		} else {
-			resp, err := getVacation(id)
+			resp, err := getVacation(id) // resp (native string)
+
 			if err != nil {
 				c.JSON(http.StatusNotFound, gin.H{
 					"message": "Id Not Found",

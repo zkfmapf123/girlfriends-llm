@@ -49,10 +49,13 @@ func GeneateVacationIdeaChange(id uuid.UUID, budget int, season string, hobbies 
 		return
 	}
 
-	system_message_prompt_string := "You are an AI travel agent that will help me create a vacation idea.\n" +
-		"My favorite season is {{.season}}.\n" +
-		"My hobbies include {{.hobbies}}.\n" +
-		"My budget is {{.budget}} dollars.\n"
+	system_message_prompt_string := "You are an AI dating coach that will help me plan a perfect date.\n" +
+		"My girlfriend's favorite season is {{.season}}.\n" +
+		"My girlfriend's hobbies include {{.hobbies}}.\n" +
+		"My girlfriend's budget is {{.budget}} dollars.\n" +
+		"My girlfriend's name is hwangjunghae.\n" +
+		"Suggest a romantic date idea in Korea that aligns with her interests and the season."
+
 	system_message_prompt := prompts.NewSystemMessagePromptTemplate(system_message_prompt_string, []string{"season", "hobbies", "dollars"})
 
 	// Create a human prompt with the request that a human would have
