@@ -53,8 +53,8 @@ func GeneateVacationIdeaChange(id uuid.UUID, budget int, season string, hobbies 
 		"My girlfriend's favorite season is {{.season}}.\n" +
 		"My girlfriend's hobbies include {{.hobbies}}.\n" +
 		"My girlfriend's budget is {{.budget}} dollars.\n" +
-		"My girlfriend's name is hwangjunghae.\n" +
-		"Suggest a romantic date idea in Korea that aligns with her interests and the season."
+		"My girlfriend's name is hwangjunghye.\n" +
+		"Suggest a romantic date idea in Korea that aligns with her interests and the season. use korean"
 
 	system_message_prompt := prompts.NewSystemMessagePromptTemplate(system_message_prompt_string, []string{"season", "hobbies", "dollars"})
 
